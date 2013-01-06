@@ -1,0 +1,86 @@
+body 
+{ 
+  font-family: "Special Elite";
+  color:white;
+  background-image: url("../static/images/old97_wreck.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  }
+
+h1 
+{ 
+  text-align:center;
+  background-color:black;
+  width:40%;
+  margin-right:auto;
+  margin-left:auto;
+  }
+
+
+input[name="search"]
+{ 
+  font-family: "Special Elite";
+  font-size:80%;
+  color:white;
+  background:none;
+  border:none;
+  width:68%;
+
+ }
+
+input:focus 
+{ 
+  outline:none;
+  }
+
+
+ul.nav-bar 
+{ 
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  float:left;
+  width:20%;
+  background-color:black;
+  font-size:120%;
+ }
+li 
+{ 
+  margin-top:5%;
+  margin-bottom:5%;
+  padding-top:2px;
+  }
+
+a 
+{ 
+  display:block;
+  text-decoration:none;
+  color:white;
+  }
+
+a:hover 
+{ 
+  font-size:115%;
+ }
+
+.container
+{ 
+  background-color:white;
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  width:60%;
+  min-height:10px;
+  max-height:80%;
+  font-size:100%;
+
+  }
+
+.content 
+{ 
+  padding:5%;
+  }
