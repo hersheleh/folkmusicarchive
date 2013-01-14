@@ -1,0 +1,22 @@
+extends layout
+
+block nav
+  ul.nav-bar
+    li
+      a(href='/') Home
+    li
+      a(href='/browse') Browse
+    li
+      a(href='/discuss') Discuss
+    li
+      a(href='') Search
+      form.search(action='', method='POST')
+      input(type='text', name='search')
+      input(type='submit', value='Find')
+    li
+      a(href='/song') Add a Song
+    hr
+    li
+      a(href='') Login
+    li
+      a(href='') Register

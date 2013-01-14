@@ -1,0 +1,134 @@
+body { 
+  font-family: "Special Elite";
+  background: black url("http://lucaforni.files.wordpress.com/2012/05/460145_3797138367612_1251837391_33586938_352340349_o.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.header {
+  margin-top:60px;
+  width:600px;
+  height:60px;
+  background-color:black;
+}
+
+.header h1 { 
+  font-size:50px;
+  color:white;
+  text-align:center;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.picture {
+  width:150px;
+  height:150px;
+  background:#aaa url('/static/img/picture.jpg');
+  border: 1px solid #999;
+}
+
+
+input[name="search"] { 
+  font-family: "Special Elite";
+  font-size:80%;
+  width:100px;
+}
+
+input:focus { 
+  outline:none;
+}
+
+
+ul.nav-bar { 
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  float:left;
+  font-size:120%;
+}
+
+li { 
+  margin-top:5%;
+  margin-bottom:5%;
+  padding-top:2px;
+}
+
+a { 
+  display:block;
+  text-decoration:none;
+  -webkit-transition: all 0.3s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.5–12.00 */
+          transition: all 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+a:hover { 
+  font-size:115%;
+}
+
+hr {
+  border:1px solid #ccc !important;
+}
+
+.edit {
+  font-size:15px;
+  display:inline;
+}
+
+.edit:hover {
+  font-size:17px;
+}
+
+.song-row {
+  width:100%;
+  height:50px;
+  font-size:18px;
+}
+
+.song-chords {
+  width:100%;
+  height:20px;
+  font-size:20px;
+}
+
+.song-word {
+  display:block;
+  float:left;
+  width:60px;
+  height:30px;
+  text-align:center;
+}
+
+.song-chord {
+  display:block;
+  float:left;
+  width:60px;
+  text-align:center;
+}
+
+.song-word:hover {
+  background:#ccc;
+}
+
+.ad {
+  background:#aaa url('/static/img/ad.png');
+  width:700px;
+  height:150px;
+}
+
+.container { 
+  background-color:white;
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  min-height:10px;
+  max-height:80%;
+  font-size:100%;
+}
+
+.content { 
+  padding:5%;
+}

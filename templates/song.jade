@@ -1,0 +1,102 @@
+extends nav
+
+block content
+  .row
+      .span2
+          .picture
+        .span8
+          h1
+            | Wayfaring Stranger
+            button.btn Edit
+          h3
+            | Jack White, Jeff Buckley, Neil Young
+            button.btn Edit
+          h4
+            | Written by: (Traditional)
+            button.btn Edit
+          a(href='') Wikipedia
+          button.btn Upload music files
+          button.btn Add to your favorites
+          audio(id="player2",src="/static/media/test.mp3",type="audio/mp3",controls="controls")  
+      .span10
+        h3 Lyrics / Music
+          button.btn Edit
+        .tabbable
+          ul.nav.nav-tabs
+            li.active
+              a(href='#tab1', data-toggle='tab') Lyrics & Music
+            li
+              a(href='#tab2', data-toggle='tab') Music
+          .tab-content
+            #tab1.tab-pane.active
+              .song
+                .song-chords
+                  span.song-chord
+                    | C
+                  span.song-chord
+                  span.song-chord
+                    | C#
+                  span.song-chord
+                  span.song-chord
+                    | Db
+                  span.song-chord
+                .song-row
+                  span.song-word
+                    | Im
+                  span.song-word
+                    | just
+                  span.song-word
+                    | a
+                  span.song-word
+                    | poor
+                  span.song-word
+                    | way-
+                  span.song-word
+                    | far-
+                  span.song-word
+                    | ing-
+                  span.song-word
+                    | stran
+                  span.song-word
+                    | -ger
+                .song-chords
+                  span.song-chord
+                    | C
+                  span.song-chord
+                  span.song-chord
+                    | C#
+                  span.song-chord
+                  span.song-chord
+                    | Db
+                  span.song-chord
+                .song-row
+                  span.song-word
+                    | Im
+                  span.song-word
+                    | just
+                  span.song-word
+                    | a
+                  span.song-word
+                    | poor
+                  span.song-word
+                    | way-
+                  span.song-word
+                    | far-
+                  span.song-word
+                    | ing-
+                  span.song-word
+                    | stran
+                  span.song-word
+                    | -ger
+              button.btn Save
+              button.btn Print Lyrics & Chords
+            #tab2.tab-pane
+              p Howdy, I'm in Section 2.
+        hr
+        h3 Videos
+          button.btn Edit
+        p These videos should be discovered by an algorithm that crawls youtube search pages and creates embed code based on name of song - and upranked or downranked also add manually to song entry
+        iframe(width='640', height='360', src='http://www.youtube.com/embed/gIlbZAP8ASQ?feature=player_detailpage', frameborder='0', allowfullscreen='allowfullscreen')
+        hr
+        .row
+          .ad

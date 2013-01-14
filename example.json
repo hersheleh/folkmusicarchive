@@ -1,0 +1,76 @@
+// song[verse][line].values[0]
+
+{
+  "name" : "Seven Nation Army",
+  "artist" : "The White Stripes",
+  "uploaded_by" : "standyro",
+  "updated_at" : "2012_10_11_05_06_00",
+  "file" : "seven_nation_army.mp3",
+  "song" : [
+    {
+      "type" : "verse"
+      "value" : [
+        {
+          "string" : "Im gonna find them all",
+          "num_words" : "5",
+          "num_syllables" : 6,
+          "values" : [
+            {"im", "E"},
+            {"gon", null},
+            {"na", null},
+            {"find", "G"},
+            {"them", "E"},
+            {"all", null}
+          ]
+        },
+        {
+          "string" : "A seven nation army couldn"t hold me back,
+          "num_words" : "8",
+          "num_syllables" : 20,
+          "values" : [
+            {"a", null},
+            {"sev", null},
+            {"en", null}
+          ]
+        }
+      }
+    },
+    {
+      "type" : "verse"
+      "value" : [[
+        {
+          "string" : "I"m gonna rip them off",
+          "syllables" : 6,
+          "values" : [
+            {"im", "E"},
+            {"gon", null},
+            {"na", null},
+            {"rip", "G"},
+            {"them", "E"},
+            {"off", null}
+          ]
+        },
+        {
+          "string" : "Taking their time",
+          "syllables" : 6,
+          "values" : [
+            {"be", null},
+            {"hind", null},
+            {"my", null},
+            {"back", null}
+          ]
+        }
+      ]
+    },
+    "chorus" : [
+      {
+        {"dun", "E"},
+        {"dun", null},
+        {"dun", null},
+        {"dun", "G"},
+        {"dun", "E"},
+        {"dun", null},
+      }
+    ]
+  ]
+}
