@@ -1,24 +1,27 @@
 body { 
-  font-family: "Special Elite";
-  background: black url("http://lucaforni.files.wordpress.com/2012/05/460145_3797138367612_1251837391_33586938_352340349_o.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
+  background:#222;
+  background-image: url("/static/img/ties.jpg");
   width:90%;
-  margin-left:auto;
-  margin-right:auto;
+  color: #bbb;
+}
+
+.well {
+  background: #111 !important;
+  border: 1px solid black !important;
+}
+
+h1, h2, h3, a {
+  font-family: "Special Elite";
 }
 
 .header {
   margin-top:60px;
-  width:600px;
-  height:60px;
   background-color:black;
 }
 
 .header h1 { 
   font-size:50px;
   color:white;
-  text-align:center;
   margin-right:auto;
   margin-left:auto;
 }
