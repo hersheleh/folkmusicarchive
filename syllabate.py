@@ -28,10 +28,10 @@ cmu = cmudict.dict()
 phoneme_dict = {
     # consonants
     'K':['k','c','qu'], 'F':['f','ph','gh'], 'ZH':['g','sio','su'], 'JH':['j','dg','g'], 'HH':['h'], 
-    'SH':['sh','tio','sio','ch'], 'DH':['th'], 'Y':['u'], 'CH':['ch','tu'],
+    'SH':['sh','tio','sio','ch'], 'DH':['th'], 'Y':['u','y'], 'CH':['ch','tu'], 'W':['w','ou'],'Z':['z','s','x'],
     # vowels
     'AA':['o','a'], 'AE':['a'],'AH':['a','u','e'], 'AO':['o','a'], 'AW':['ow'],'AY':['ie','i','ay'],
-    'EH':['a','e'], 'ER':['er','ear'], 'EY':['a','ei'], 'IH':['i'],'IY':['ea','ee','e','i'],
+    'EH':['a','e'], 'ER':['ar','er','ear'], 'EY':['a','ei'], 'IH':['i','e'],'IY':['ea','ee','e','i'],
     'OW':['o'],'OY':['oy','oy'], 'UH':['ou'], 'UW':['ou','oo','ew','u']}
 
 
