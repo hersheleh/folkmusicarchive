@@ -27,11 +27,11 @@ cmu = cmudict.dict()
 
 phoneme_dict = {
     # consonants
-    'K':['k','c','que'], 'F':['f','ph','gh'], 'ZH':['g','sio','su'], 'JH':['j','dg','g'], 'HH':['h'], 
+    'K':['k','c','qu'], 'F':['f','ph','gh'], 'ZH':['g','sio','su'], 'JH':['j','dg','g'], 'HH':['h'], 
     'SH':['sh','tio','sio','ch'], 'DH':['th'], 'Y':['u'], 'CH':['ch','tu'],
     # vowels
-    'AA':['a','o'], 'AE':['a'],'AH':['a','u'], 'AO':['o','a'], 'AW':['ow'],'AY':['ie','i','ay'],
-    'EH':['e'], 'ER':['er','ear'], 'EY':['a','ei'], 'IH':['i'],'IY':['ea','ee','i'],
+    'AA':['o','a'], 'AE':['a'],'AH':['a','u','e'], 'AO':['o','a'], 'AW':['ow'],'AY':['ie','i','ay'],
+    'EH':['a','e'], 'ER':['er','ear'], 'EY':['a','ei'], 'IH':['i'],'IY':['ea','ee','e','i'],
     'OW':['o'],'OY':['oy','oy'], 'UH':['ou'], 'UW':['ou','oo','ew','u']}
 
 
@@ -52,24 +52,27 @@ def syl(word):
 
         for syllable, (stress, onset, nucleus, coda) in enumerate(syl_pro):
             if onset == []:
-                split_point = "".join(nucleus)
+                split_point = nucleus[0]
             else:
-                split_point = "".join(onset) # turns list into string
+                split_point = onset[0]
 
+            print split_point
             '''
-            if the onset is in the phoneme dictionary,
-            iterate and find the letter corrosponding to the 
-            phoneme and set split_point_index to that letter's index
+            if the split_point is in the phoneme dictionary,
+            iterate and find index of all letters corrosponding to the 
+            phoneme and set split_point_index to the smallest index
             '''
             if (split_point in phoneme_dict):
+                indices = []
                 for spelling in phoneme_dict[split_point]:
                     index = word.find(spelling)
                     if (index != -1):
-
-                        split_point_index = index
-                        break
+                        indices.append(index)
+                indices.sort()
+                split_point_index = indices[0]
+                
             else:
-                split_point_index = word.find(split_point[0].lower())
+                split_point_index = word.find(split_point.lower())
 
 
             print "caught: ",word[split_point_index]
