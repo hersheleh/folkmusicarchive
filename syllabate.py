@@ -17,6 +17,10 @@ word:  ange
 parsed:  [['o', ''], ['r', 'ange']]
 ['o', 'range']
 
+
+index out of range means there is something missing from the phoneme_dict
+
+keyerror means the word is not in cmudict
 #############################################
 '''
 import syllabifier
@@ -41,10 +45,23 @@ def pro_syl(word):
     return syllabifier.syllabify(eng, pronounce)
 
 
+def syl_phrase(phrase):
+    for word in phrase.split():
+        syl_word = syl(word)
+        if (syl_word != -1):
+            print syl_word
+        else:
+            print word," (not syllabified)"
+
+
 def syl(word):
-    pronounce = " ".join(cmu[word][0])
     
-    syl_pro = syllabifier.syllabify(eng, pronounce)
+    try:
+        pronounce = " ".join(cmu[word.lower()][0])
+        syl_pro = syllabifier.syllabify(eng, pronounce)
+    except KeyError:
+        return -1
+
     print syl_pro
     
     if len(syl_pro) > 1:
@@ -73,7 +90,7 @@ def syl(word):
                 
             else:
                 split_point_index = word.find(split_point.lower())
-
+                
 
             print "caught: ",word[split_point_index]
 
@@ -97,7 +114,7 @@ def syl(word):
             print "word: ",word
             print "parsed: ",parsed_word
 
-        return ["".join(a) for a in parsed_word]
+        return " ".join(["".join(a) for a in parsed_word])
 
     return word
             
