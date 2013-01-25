@@ -36,7 +36,7 @@ phoneme_dict = {
     # vowels
     'AA':['o','a'], 'AE':['a'],'AH':['a','u','e'], 'AO':['o','a'], 'AW':['ow'],'AY':['ie','i','ay'],
     'EH':['a','e'], 'ER':['ar','er','ear'], 'EY':['a','ei'], 'IH':['i','e'],'IY':['ea','ee','e','i'],
-    'OW':['o'],'OY':['oy','oy'], 'UH':['ou'], 'UW':['ou','oo','ew','u']}
+    'OW':['o'],'OY':['oy','oi'], 'UH':['ou'], 'UW':['ou','oo','ew','u']}
 
 
 
@@ -82,14 +82,14 @@ def syl(word):
             if (split_point in phoneme_dict):
                 indices = []
                 for spelling in phoneme_dict[split_point]:
-                    index = word.find(spelling)
+                    index = word.lower().find(spelling)
                     if (index != -1):
                         indices.append(index)
                 indices.sort()
                 split_point_index = indices[0]
                 
             else:
-                split_point_index = word.find(split_point.lower())
+                split_point_index = word.lower().find(split_point.lower())
                 
 
             print "caught: ",word[split_point_index]
