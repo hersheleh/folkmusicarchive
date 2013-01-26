@@ -10,15 +10,20 @@
       "value" : [
         {
           "string" : "Im gonna find them all",
-          "num_words" : "5",
-          "num_syllables" : 6,
           "values" : [
-            {"im", "E"},
-            {"gon", null},
-            {"na", null},
-            {"find", "G"},
-            {"them", "E"},
-            {"all", null}
+            {
+                "word" : "I'm"
+                "syllables" : [
+                  {"im", "E"},
+                ]
+            },
+            {
+                "word" : "Gonna"
+                "syllables" : [
+                  {"gon", "E"},
+                  {"na, "E"}
+                ]
+            }
           ]
         },
         {
@@ -34,41 +39,7 @@
       }
     },
     {
-      "type" : "verse"
-      "value" : [[
-        {
-          "string" : "I"m gonna rip them off",
-          "syllables" : 6,
-          "values" : [
-            {"im", "E"},
-            {"gon", null},
-            {"na", null},
-            {"rip", "G"},
-            {"them", "E"},
-            {"off", null}
-          ]
-        },
-        {
-          "string" : "Taking their time",
-          "syllables" : 6,
-          "values" : [
-            {"be", null},
-            {"hind", null},
-            {"my", null},
-            {"back", null}
-          ]
-        }
-      ]
-    },
-    "chorus" : [
-      {
-        {"dun", "E"},
-        {"dun", null},
-        {"dun", null},
-        {"dun", "G"},
-        {"dun", "E"},
-        {"dun", null},
-      }
-    ]
+
+    }
   ]
 }
